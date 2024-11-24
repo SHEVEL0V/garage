@@ -17,7 +17,7 @@ const buttonName = [
 
 export default function NawProducts() {
   return (
-    <section className="bg-slate-100 flex flex-col items-center p-2">
+    <section className="bg-slate-100 flex flex-col items-center pb-2 px-2">
       <ul className="flex gap-1 w-full  overflow-auto ">
         {buttonName.map((name) => (
           <li

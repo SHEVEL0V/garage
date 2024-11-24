@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ButtonBasket() {
   return (
-    <button className="bg-green-600 fill-slate-50 border p-2 rounded">
+    <button className="p-2 border rounded bg-green-600 hover:bg-green-700  fill-slate-50 ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         height="24px"

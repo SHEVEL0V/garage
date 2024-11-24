@@ -1,6 +1,7 @@
 /** @format */
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import Sidebar from "@/components/sidebar";
 import Advertising from "@/components/main/advertising";
 import NawProducts from "@/components/main/naw";
 import ListProducts from "@/components/main/products/list";
@@ -13,8 +14,13 @@ export default function Home() {
       <Header />
       <main className="flex flex-col">
         <Advertising />
-        <NawProducts />
-        <ListProducts data={list} />
+        <div className="flex p-2">
+          <Sidebar />
+          <div>
+            <NawProducts />
+            <ListProducts data={list} />
+          </div>
+        </div>
       </main>
       <Footer />
     </div>
