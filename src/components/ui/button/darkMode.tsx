@@ -1,13 +1,14 @@
 /** @format */
 "use client";
-import React, { useState } from "react";
+import { useDarkMode } from "@/hooks/useDarkMode";
+import React from "react";
 
 export default function DarkMode() {
-  const [mode, setMode] = useState(true);
+  const [isDarkMode, toggleDarkMode] = useDarkMode();
 
   return (
-    <button className="" onClick={() => setMode(!mode)}>
-      {mode ? (
+    <button onClick={() => toggleDarkMode()}>
+      {!isDarkMode ? (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           height="24px"

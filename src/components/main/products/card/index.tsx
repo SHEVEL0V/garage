@@ -7,7 +7,7 @@ import ButtonStars from "@/components/ui/button/stars";
 
 export default function ProductCard({ item }: { item: number }) {
   return (
-    <li className="shadow border p-2 bg-white">
+    <li className="shadow border p-2 bg-white dark:bg-slate-300">
       <div className="text-gray-500 flex justify-between">
         <div>key:{item}</div>
         <div>toptul</div>

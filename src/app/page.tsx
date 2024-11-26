@@ -16,7 +16,7 @@ export default function Home() {
         <Advertising />
         <div className="flex p-2">
           <Sidebar />
-          <div>
+          <div className="pl-2">
             <NawProducts />
             <ListProducts data={list} />
           </div>

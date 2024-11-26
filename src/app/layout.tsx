@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans bg-slate-100 text-gray-700 transition-colors`}>
+      <body
+        className={` bg-slate-100 dark:bg-slate-500 text-gray-700 transition-colors  `}
+      >
         {children}
       </body>
     </html>
